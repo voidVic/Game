@@ -1,0 +1,32 @@
+<HTML>
+	<HEAD>
+		<TITLE>Catching Ball</TITLE>
+		<link rel="stylesheet" type="text/css" href="css/movingBall.css">
+	</HEAD>
+	<BODY  onmousemove="moveCoord(event)" onload="ballFall()">
+		<div id="grass3"></div>
+		<div id="grass2"></div>
+		<div id="grass1"></div>
+		<div id="containerStart">
+			<div class="containerStartInner">
+				<P>Catching Ball</P>
+				<input type="button" onClick="startGame()" value="Start Game">
+			</div>
+		</div>
+		<div id="containerGame">
+		
+			<DIV ID="basket"><div id="basketLeft"></div><div id="basketMid"></div><div id="basketRight"></div></DIV>
+			<div ID="ball"></div>
+			
+			<div id="scoreArea"></div>
+			<div id="scoreArea2">
+				<P id="highestScore">Highest Score: 0</P>
+				<P id="total">Total: 0</P>
+				<P id="miss">Miss Left: 5</P>
+				<P id="score">Score: 0</P>
+				<input type="button" id="restart" value="Restart Game" onclick="restartGame()">
+			</div>
+		</div>
+		<script type="text/javascript" src="js/game.js"></script>
+	</BODY>
+</HTML>
