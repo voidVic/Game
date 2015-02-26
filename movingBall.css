@@ -1,0 +1,208 @@
+body{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background: linear-gradient(to bottom, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+
+}
+
+
+#containerStart{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 1;
+	left: 7%;
+}
+.containerStartInner P{
+	position: relative;
+	text-align: center;
+	font-size: 50px;
+	color: #444;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding: 30px 0 20px 0;
+	border-bottom: 4px solid #fff;
+	border-left: 4px solid #fff;
+	border-right: 4px solid #fff;
+}
+.containerStartInner input[type=button]{
+	width: 30%;
+	margin: 200px 0 0 35%;
+	padding: 30px 0 30px 0;
+	background-color: #2faceb;
+	border-radius: 7px;
+	border: 0px;
+	color: #eee;
+	font-size: 30px;
+	cursor: crosshair;
+	opacity: 0.8;
+}
+.containerStartInner input[type=button]:hover{
+	box-shadow: 8px 8px 25px #444;
+	border-radius: 7px;
+	padding: 60px 0 60px 0;
+	width: 50%;
+	margin: 170px 0 0 25%;
+	font-size: 40px;
+	-webkit-transition:all .2s linear;
+	-moz-transition:all .2s linear;
+	background-color: #eee;
+	border: 2px solid #2faceb;
+	color: #2faceb;
+}
+
+#containerGame{
+	display: none;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+
+#basket{
+	position: absolute;
+	top: 420px;
+	left: 250px;
+	/*width: 80px;
+	height: 27px;
+	background: url("../images/basket.png") no-repeat;*/
+	/*border-bottom: 4px groove #444;
+	border-left: 2px solid #444;
+	border-right: 2px solid #444;*/
+	z-index: 1;
+}
+#basketLeft{
+	float: left;
+	width: 17px;
+	height: 27px;
+	background: url("../images/basketLeft.png") no-repeat;
+}
+#basketMid{
+	float: left;
+	width: 50px;
+	height: 27px;
+	background-image: url("../images/basketMid.png");
+}
+#basketRight{
+	float: left;
+	width: 17px;
+	height: 27px;
+	background: url("../images/basketRight.png") no-repeat;
+}
+
+#ball{
+	position: absolute;
+	width: 35px;
+	height: 36px;
+	z-index: 1;
+	background: url("../images/ball1.png") no-repeat;
+	/*border: 2px solid #99f;*/
+	border-radius: 50px;
+}
+
+
+
+
+#gameLevel{
+	margin: 20% 5%;
+	font-size: 50px;
+	text-align: center;
+}
+
+
+#scoreArea{
+	/*-webkit-filter: blur(8px);*/
+	background-image: url("../images/glass.jpg");
+	background-repeat: repeat;
+	opacity: 0.7;
+	width: 29%;
+	height: 460px;
+	right: 1%;
+	top: 70px;
+	position: absolute;
+	-webkit-transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out;
+	border-radius: 7px;
+}
+#scoreArea2{
+	width: 29%;
+	height: 460px;
+	right: 1%;
+	top: 70px;
+	position: absolute;
+	color: #444;
+	background: transparent;
+	-webkit-transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out;
+	border-radius: 7px;
+}
+
+#score{
+	text-align: center;
+	border-top: 1px solid #2faceb;
+	padding-top: 20px;
+	font-size: 30px;
+}
+
+#miss, #total, #highestScore{
+	text-align: center;
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+#scoreArea2 input[type=button]{
+	background-color: #2faceb;
+	border: 0px;
+	border-radius: 8px;
+	color: #ccc;
+	width: 70%;
+	margin-left: 15%;
+	margin bottom: 20px;
+	font-size: 20px;
+	padding: 4% 0;
+	text-align: center;
+	opacity: 1;
+}
+#scoreArea2 input[type=button]:hover{
+	width: 90%;
+	background-color: #ccc;
+	border: 1px solid #2faceb;
+	color: #2faceb;
+	margin-left: 5%;
+	font-size: 25px;
+	padding: 7% 0;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+}
+
+
+/*----------- Prallex ----------*/
+
+
+#grass1, #grass2, #grass3{
+			position: absolute;
+			width: 250%;
+			background-repeat: repeat-x;
+			opacity: 0.9;
+			
+		}
+		#grass1{
+			top: 60%;
+			background-image: url("../images/grass1.png");
+			height: 287px;
+			z-index: 0;
+		}
+		#grass2{
+			top: 40%;
+			background-image: url("../images/grass2.png");
+			height: 381px;
+			z-index: -1;
+		}
+		#grass3{
+			top: 25%;
+			background-image: url("../images/grass3.png");
+			height: 331px;
+			z-index: -2;
+		}
